@@ -17,7 +17,7 @@ You can download it from here: http://www.wampserver.com/en/
 You can download it from here: https://www.microsoft.com/en-us/download/details.aspx?id=20098<br>
 I used version 3.2 which is compatible with PHP 5.4 and later till PHP 7<br>
 After installing you can include the extension by adding these lines to php.ini ( in case you are using PHP 5.6 as i am):<br>
-ension=php_pdo_sqlsrv_56_ts.dll<br>
+extension=php_pdo_sqlsrv_56_ts.dll<br>
 extension=php_sqlsrv_56_ts.dll
 
 <b>5. Microsoft® ODBC Driver 11 for SQL Server® ( this is for PHP 5.6 also )</b><br>
