@@ -16,7 +16,7 @@ FROM [PeriodicConsumptionItems]
 
 LEFT OUTER JOIN [InventoryItems] ON [InventoryItemId] = [InventoryItems].[Id]
 
-WHERE [PeriodicConsumptionId] = (SELECT TOP 1 [Id] FROM [RockCaffe].[dbo].[PeriodicConsumptions] ORDER BY [Id] DESC)
+WHERE [PeriodicConsumptionId] = (SELECT TOP 1 [Id] FROM [PeriodicConsumptions] ORDER BY [Id] DESC)
       AND
 	ISNULL([PhysicalInventory],([InStock]+[Added]-[Removed]-[Consumption])) >= 0.05
 
@@ -27,7 +27,7 @@ if( $stmt === false) {
 }
 
 while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_NUMERIC) ) {
-      echo "<tr><th>".$row[0]."</th><th>".$row[1]."</th><th>".$row[2]."</th><th>".$row[3]."</tr>";
+      echo "<tr><th>".$row[0]."</th><th>".$row[1]."</th><th>".$row[2]."</th><th>".$row[3]."</th><th>".$row[4]."</tr>";
 }
 sqlsrv_free_stmt( $stmt);
 ?>
