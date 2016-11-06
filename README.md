@@ -3,8 +3,12 @@ SambaPOS Web Interface for Reports using PHP
 
 # What you will need for setting this up:
 1. SambaPOS3,4,5
+You can download it from here: http://www.sambapos.com
 
 2. SQL Server 2012 or later version (possible to work with lower versions too)
+You can download it from here: https://www.microsoft.com/en-us/download/details.aspx?id=29062
+Also a tutorial for migrating and installing SQL Server 2012 can be found here:
+https://forum.sambapos.com/t/how-to-migrate-from-sql-compact-edition-sdf-file-to-sql-server-2012-express/752
 
 3. Wamp Server
 You can download it from here: http://www.wampserver.com/en/
