@@ -1,9 +1,9 @@
 <?php
 /* Server Configuration */
-$serverHost = "90ss.go.ro"; 
-$databaseName = "RockCaffe";
+$serverHost = "hostname.for.your.mssql"; 
+$databaseName = "DB-Name";
 $userName = "sa";
-$password = "ro92rzbr";
+$password = "password";
 /* End Server Configuration */
 
 $connInfo = array("Database"=>$databaseName, "UID"=>$userName, "PWD"=>$password);
