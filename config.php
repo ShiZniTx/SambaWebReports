@@ -1,7 +1,7 @@
 <?php
 /* Server Configuration */
 $serverHost = "hostname.name"; 
-$databaseName = "RockCaffe";
+$databaseName = "DbName";
 $userName = "sa";
 $password = "password";
 /* End Server Configuration */
