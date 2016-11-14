@@ -1,9 +1,9 @@
 <?php
 /* Server Configuration */
-$serverHost = "90ss.go.ro"; 
+$serverHost = "hostname.name"; 
 $databaseName = "RockCaffe";
 $userName = "sa";
-$password = "ro92rzbr";
+$password = "password";
 /* End Server Configuration */
 
 /* Business Configuration Strings */
