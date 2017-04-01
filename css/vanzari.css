@@ -1,3 +1,7 @@
+.col-md-12.top-container {
+    margin-top: 51px;
+}
+
 table {
     width: 100%;
 }
@@ -47,12 +51,12 @@ span.pwshiz {
     top: -50px;
     left: 86px;
 }
-.tabel table tr:nth-last-child(1) {
+.tabel table tr:nth-last-child(1), #sum_table_retetar tr:nth-last-child(2) {
     background: #0e0e0e;
     color: white;
     font-size: 20px;
 }
-.tabel table tr:nth-last-child(1) th:nth-child(1) {
+.tabel table tr:nth-last-child(1) th:nth-child(1), #sum_table_retetar tr:nth-last-child(2) th:nth-child(1) {
     padding-left: 20px;
     padding-top:10px;
     padding-bottom: 8px;
@@ -140,4 +144,170 @@ a, a:hover {
 .header_fpage {
     position: relative;
     text-align: center;
+}
+th.normalTH {
+    padding: 0px !important;
+    text-align: left !important;
+	font-size: 15px;
+}
+th.th1TOTAL {
+    font-size: 20px;
+    text-align: left !important;
+    background: #282121 !important;
+    padding: 2px 10px !important;
+}
+
+th.th1TOTAL.totalulgen {
+    text-align: center !important;
+}
+th.tablettile {
+    font-size: 25px;
+}
+tr.randTitlux {
+    color: white;
+    background-color: #468847;
+}
+
+tr.randTitlux th {
+    text-align: center;
+    border-right: 1px solid black;
+    padding: 10px;
+    font-size: 12px;
+}
+tr.randTitlux th:nth-child(1) {
+    width: 230px;
+}
+#sum_table_consummx tr th {
+    text-align: center;
+}
+#sum_table_consummx tr th {
+    border: 1px solid black;
+}
+
+table#sum_table_consummx tr:nth-child(even) {
+    background-color: #5d5d5d;
+    color: white;
+}
+
+table#sum_table_consummx {width: calc(100% - 50px);margin-left: 25px;}
+th.tablettile.ep1 {
+    background-color: darkorange;
+    color: cornsilk;
+    text-shadow: 1px 1px 1px black;
+    border: 1px solid black;
+    border-top: none;
+}
+
+table.totalTabelVanzari {
+    width: calc(100% - 50px);
+    margin-left: 25px;
+}
+
+th.th1TOTAL2 {
+    text-align: center;
+    color: cornsilk;
+    background-color: darkorange;
+    border: 1px solid black;
+    border-top: none;
+    border-right: none;
+}
+
+th.th1TOTAL1.totalulgen {
+    text-align: center;
+}
+
+body > table.totalTabelVanzari > tbody > tr:nth-child(1) > th.th1TOTAL1.totalulgen {
+    background-color: darkorange;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    color: #fff8dc;
+}
+
+body > table.totalTabelVanzari > tbody > tr:nth-child(2) > th.th1TOTAL1.totalulgen {
+    color: white;
+    background-color: darkorange;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+body > table.totalTabelVanzari > tbody > tr:nth-child(3) > th.tablettile {
+    background: rebeccapurple;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+body > table.totalTabelVanzari > tbody > tr:nth-child(3) > th:nth-child(2) {
+    text-align: center;
+    color: white;
+    background: rebeccapurple;
+    border-bottom: 1px solid black;
+}
+
+body > table.totalTabelVanzari > tbody > tr:nth-child(3) > th.th1TOTAL1.totalulgen {
+    background: rebeccapurple;
+    color: white;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+th.tablettile.ep1 {
+    padding-left: 20px;
+}
+
+body > table.totalTabelVanzari > tbody > tr:nth-child(3) > th.tablettile {
+    padding-left: 20px;
+}
+.infoTitlu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.titluRaport {
+    font-size: 25px;
+    font-weight: 700;
+}
+.subtitluRaport {
+    font-weight: 600;
+}
+	.infoTitlu {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.titluRaport {
+		font-size: 25px;
+		font-weight: 700;
+	}
+	.subtitluRaport {
+		font-weight: 600;
+	}
+	.dataCrt {
+		margin: 20px 15px 20px 15px;
+		width: calc(100% - 30px);
+		text-align: center;
+	}
+	.infoTitlu {
+		display: none
+	}
+	.infoFirma {
+		display: none;
+	}
+	.nrDoc {
+		display:none;
+	}
+
+	.nrRaport {
+		font-weight: 600;
+	}
+	
+@media screen and (max-width: 768px) {
+	.containertable {
+		overflow-x: scroll;
+	}
+	.containertable.nir .tabel.col-md-12 {
+		min-width: 600px;
+	}
+	body > div.header_fpage > img {
+		width: 100%;
+	}
 }

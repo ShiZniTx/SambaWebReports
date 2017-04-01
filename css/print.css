@@ -1,0 +1,211 @@
+/* PRINTING STYLE */
+@media print {
+    fieldset {
+        display: none;
+    }
+    .connected {
+        display: none;
+    }
+    .PaginaStoc th {
+        border: 1px solid black;
+    }
+    table {
+        border-collapse: collapse;
+    }
+	table#sum_table_stoc tr:not(:nth-child(1)) th {
+		color: black;
+		font-weight: 500;
+	}
+	table#sum_table_stoc tr:nth-last-child(1) th {
+		color: black;
+		font-weight: 600;
+		font-size: 20px;
+	}
+	.PaginaConsum table#sum_table_consumm {
+		width: 100%;
+		border: 3px solid black;
+	}
+
+	.PaginaConsum table#sum_table_retetar {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	.PaginaConsum table#sum_table_retetar {
+		border: 3px solid black;
+		border-top: none;
+	}
+
+	.PaginaConsum table#sum_table_retetar tr:nth-last-child(1), table#sum_table_retetar tr:nth-last-child(2) {
+		border: 1px solid black;
+	}
+	.PaginaConsum #sum_table_retetar tr:nth-last-child(2) > th:nth-child(2) {
+		border-left: 1px solid black !important;
+	}
+
+	.PaginaConsum table#sum_table_consumm tr:not(:nth-child(1)) th {
+		font-weight: 500;
+	}
+
+	.PaginaConsum table#sum_table_retetar tr:not(:nth-child(1)) th {
+		font-weight: 500;
+	}
+	.PaginaConsum #sum_table_retetar tr:nth-last-child(2) th, #sum_table_retetar tr:nth-last-child(1) th {
+		font-weight: 700 !important;
+	}
+	.PaginaConsum .pagebreaks, .PaginaConsum table.totalTabel {
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+	.datetimepicker {
+		display: none;
+	}
+	.PaginaConsum table.totalTabel {
+		width: 100%;
+		border: 2px solid black;
+		font-size: 27px;
+	}
+	.PaginaConsum table.totalTabel tr:nth-child(1) {
+		border-bottom: 1px solid;
+	}
+	.PaginaConsum .totalTabel th.tablettile {
+		border-right: 1px solid;
+	}
+	
+	/* NIR CSS */
+	.nir .dateFacutrare {
+		height: 58px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		font-weight: 700;
+		border: 2px solid;
+		padding-top: 10px;
+	}
+	.nir .nrfact {
+		width: 25%;
+		float: left;
+		text-align:center;
+	}
+	.nir .numefirma {
+		width: 25%;
+		float: left;
+		text-align: center;
+	}
+	.nir .datafact {
+		width: 25%;
+		float: left;
+		text-align: center;
+	}
+	.nir .idNir {
+		width: 25%;
+		float: left;
+		text-align: center;
+	}
+	.nir table#sum_table_nir {
+		width: 100%;
+		margin-bottom: 50px;
+		page-break-after: always;
+		page-break-inside: avoid;
+
+	}
+	.nir table#sum_table_nir th {
+		border: 1px solid;
+	}
+	.nir table#sum_table_nir tr:not(:nth-child(1)) th {
+		font-weight: 400 !important;
+	}
+	.nir table#sum_table_nir tr:nth-last-child(1) th {
+		font-size: 25px;
+		font-weight: 700 !important;
+	}
+	/* Vanzari CSS */
+	.vanzariPerioada table#sum_table_consummx {
+		width: 100%;
+	}
+	.vanzariPerioada table#sum_table_consummx th {
+		border: 1px solid black;
+	}
+	.vanzariPerioada table#sum_table_consummx tr:not(:nth-child(1)) th {
+		font-weight: 500;
+	}
+	.vanzariPerioada table.totalTabelVanzari {
+		width: 100%;
+	}
+	.vanzariPerioada table.totalTabelVanzari {
+		border-bottom: 1px solid black;
+		border-right: 1px solid black;
+		border-left: 1px solid black;
+	}
+	.vanzariPerioada th.tablettile.ep1 {
+		border-bottom: 1px solid black;
+	}
+	.vanzariPerioada table.totalTabelVanzari {
+		font-size: 20px;
+	}
+	.vanzariPerioada table.totalTabelVanzari tr:nth-last-child(1) {
+		border-top: 2px solid black;
+	}
+	.vanzariPerioada table#sum_table_consummx tr th:nth-last-child(1) {
+		display: none;
+	}
+	.infoTitlu {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.titluRaport {
+		font-size: 25px;
+		font-weight: 700;
+	}
+	.subtitluRaport {
+		font-weight: 600;
+	}
+	.dataCrt {
+		border: 1px solid black;
+		margin-bottom: 109px !important;
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-radius: 5px;
+		margin: auto;
+		position: relative;
+		top: 91px;
+	}
+	.infoTitlu {
+		left: 0px;
+		margin-top: 5px;
+		margin-left: 8px;
+		text-align: left;
+		position: absolute;
+		border: 1px solid black;
+		padding: 10px;
+		border-radius: 5px;
+	}
+	.infoFirma {
+		/* float: right; */
+		margin-top: 5px;
+		margin-right: 8px;
+		position: absolute;
+		right: 0px;
+		border: 1px solid black;
+		padding: 15px;
+		border-radius: 5px;
+	}
+	.nrDoc {
+		position: absolute;
+		border: 1px solid black;
+		padding: 14px;
+		width: 100px;
+		top: 14px;
+		left: calc(50% - 86px);
+		text-align: center;
+		border-radius: 10px;
+	}
+
+	.nrRaport {
+		font-weight: 600;
+	}
+	.PaginaStoc .tabel {
+		position: relative;
+		top: 100px;
+	}
+}
