@@ -2,8 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Intrare Marfa</title>
 	<link href="./css/vanzari.css" rel="stylesheet" media="screen">
+	<link href="./css/print.css" rel="stylesheet" media="print">
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="./css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
 	<script type="text/javascript" src="./jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
@@ -35,12 +37,13 @@
                     <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
 					<div class="spacer"></div>
                 </div>
-				<button type="submit" class="col-md-4 col-sm-4 col-xs-4 col-lg-4 btn btn-default buton-actiune">Afiseaza NIR-uri</button>
+				<button type="submit" class="col-md-4 col-sm-4 col-xs-4 col-lg-4 btn btn-default buton-actiune">Afiseaza</button>
 				<input type="hidden" id="dtp_input2" /><br/><br/>
             </div>
         </fieldset>
     </form>
 </div>
+<div class="containertable nir">
 <?php 
 if(!empty($_POST["startdate"]) && !empty($_POST["enddate"])){ ?>
 
@@ -49,6 +52,7 @@ if(!empty($_POST["startdate"]) && !empty($_POST["enddate"])){ ?>
 <?php
 }
 ?>
+</div>
 <script type="text/javascript" src="./js/reportJS.js" charset="UTF-8"></script>
 </body>
 </html>

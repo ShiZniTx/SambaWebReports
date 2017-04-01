@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "RockCaffe Rapoarte Protejate"
+AuthUserFile T:\wamp\www\SambaInterface\.htpasswd
+Require valid-user

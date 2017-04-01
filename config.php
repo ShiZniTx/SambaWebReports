@@ -1,13 +1,13 @@
 <?php
 /* Server Configuration */
-$serverHost = "hostname.name"; 
-$databaseName = "DbName";
+$serverHost = "hostname.com"; 
+$databaseName = "dbname";
 $userName = "sa";
 $password = "password";
 /* End Server Configuration */
 
 /* Business Configuration Strings */
-$BusinessName = 'RockCaffe';
+$BusinessName = '';
 /* End Business Configuration Strings */
 
 
