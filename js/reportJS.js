@@ -28,19 +28,3 @@ $('.form_datetime_raport1').datetimepicker({
 		minView: 3
     });
 	
-/* Stock Report Total Row Handler */
- var total = 0;
-        $(document).ready(function(){
-			
-            var $dataRows=$("#sum_table_stoc tr:not('.totalRand, .randTitlu')");
-
-            $dataRows.each(function() {
-                $(this).find('.randTotal').each(function(i){        
-                    total+=parseFloat( $(this).html());
-                });
-            });
-            $("#sum_table_stoc th.totalul").each(function(i){  
-                $(this).html(total+" RON");
-            });
-
-        });
