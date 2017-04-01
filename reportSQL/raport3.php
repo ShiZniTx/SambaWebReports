@@ -109,13 +109,7 @@ echo "<div class='idNir'>Nr. NIR: <br>".$idDoc."</div></div>";
 
 		<tr class="totalRand">
 			<th>Total</th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th class="totalul"><?php echo sumArray($sumaP, $RandMin, $RandMax); ?></th>
+			<th colspan="7" class="totalul"><?php echo sumArray($sumaP, $RandMin, $RandMax); ?></th>
 		</tr>
 	 </table>
 </div>

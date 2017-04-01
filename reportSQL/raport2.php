@@ -17,8 +17,8 @@ SELECT
 --, [Price]
 , [Price]*SUM([Quantity]) as [TAmt]
 
-FROM [RockCaffe].[dbo].[Orders] o
-LEFT JOIN [RockCaffe].[dbo].[MenuItems] m on m.[Id] = o.[MenuItemId]
+FROM [Orders] o
+LEFT JOIN [MenuItems] m on m.[Id] = o.[MenuItemId]
 
 WHERE 1=1
 and [CreatedDateTime] >= @dat_WorkPeriod_Beg

@@ -3,23 +3,12 @@ $datai = $_POST["startdate"];
 $dataf = $_POST["enddate"];
 $dataInceput = date('Y-m-d',date(strtotime("+0 day", strtotime($datai ))));
 $dataFinal = date('Y-m-d',date(strtotime("+0 day", strtotime($dataf ))));
-$monthC = date("m",strtotime($dataInceput));
-$yearC = date("y",strtotime($dataInceput));
 ?>
+<div class="dataCrt">S-au afisat vanzarile facute intre Data: <?php echo $dataInceput; ?> Ora: 6:00 si Data: <?php echo $dataFinal; ?> Ora: 6:00</div>
 <div class="infoTitlu">
 	<div class="titluRaport">Bonuri Consum</div>
 	<div class="subtitluRaport">S.C. RockCaffe Grecu SRL-D</div>
 </div>
-<div class="nrDoc">
-	<div class="nrRaport">Nr. Doc.</div>
-	<div class="nrEfectivRaport">BC<?php echo $monthC;?><?php echo $yearC;?></div>
-</div>
-<div class="infoFirma">
-	<div class="CUI"><b>CUI:</b> 33873931</div>
-	<div class="nrregcom"><b>Registru Comertului:</b> J17/1297/2014</div>
-</div>
-<div class="dataCrt">S-au afisat bonurile de consum pentru intervalul Data: <?php echo $dataInceput; ?> Ora: 6:00 si Data: <?php echo $dataFinal; ?> Ora: 6:00</div>
-
 <?php
 $sql1 = "
 declare @dat_WorkPeriod_Beg Datetime = '".$dataInceput."T06:00:00.000'
@@ -196,7 +185,7 @@ while( $row2 = sqlsrv_fetch_array( $stmt2, SQLSRV_FETCH_NUMERIC) ) {
 		$pretunit = $row2[9];
 	}
 	$pretRETcuTVA = $pretunit * $row2[8] + $pretunit;
-	echo '<tr><th>Materie Prima</th><th class="subreteta center">'.$row2[7].'</th><th class="subreteta center">90INV'.$row2[3].'</th><th class="subreteta center">'.$row2[6].'</th><th class="subreteta center">'.$row2[5]*$cantitate.'</th><th class="subreteta center">'.number_format($pretunit,4).'</th><th class="subreteta center">'.number_format($pretRETcuTVA,4).'</th><th class="subreteta center">'.number_format($pretRETcuTVA*$row2[5]*$cantitate,4).'</th>';
+	echo '<tr><th>Materie Prima</th><th class="subreteta center">'.$row2[7].'</th><th class="subreteta center">90INV'.$row2[3].'</th><th class="subreteta center">'.$row2[6].'</th><th class="subreteta center">'.number_format($row2[5],3).'</th><th class="subreteta center">NONeeD</th><th class="subreteta center">NONeeD</th><th class="subreteta center">NONeeD</th>';
 	
 	$priceTOT[] = $pretunit*$row2[5]*$cantitate;
 	$priceTOTTVA[] = $pretRETcuTVA*$row2[5]*$cantitate;
@@ -218,7 +207,7 @@ while( $row2 = sqlsrv_fetch_array( $stmt2, SQLSRV_FETCH_NUMERIC) ) {
 
 		<tr class="totalRand">
 			<th class="totalClass" rowspan="2">Total</th>
-			<th class="normalTH">fara TVA</th>
+			<th class="normalTH">cu TVA</th>
 			<th class="normalTH"></th>
 			<th class="normalTH"></th>
 			<th class="normalTH"></th>
@@ -227,7 +216,7 @@ while( $row2 = sqlsrv_fetch_array( $stmt2, SQLSRV_FETCH_NUMERIC) ) {
 			<th class="totalul"><?php echo number_format(sumArray($priceTOT, $RandMin, $RandMax),2).' LEI'; ?></th>
 		</tr>
 		<tr class="totalRand">
-			<th class="normalTH">cu TVA</th>
+			<th class="normalTH">fara TVA</th>
 			<th class="normalTH"></th>
 			<th class="normalTH"></th>
 			<th class="normalTH"></th>
